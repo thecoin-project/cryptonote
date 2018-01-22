@@ -75,7 +75,10 @@ const char     MINER_CONFIG_FILE_NAME[]                      = "miner_conf.json"
 //TODO Put here the name of your currency
 const char     CRYPTONOTE_NAME[]                             = "Thecoin";
 //const char     GENESIS_COINBASE_TX_HEX[]                     = "";
-const char GENESIS_COINBASE_TX_HEX[] = "013c01ff00014c029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd088071210129b0cc6c5dc15e407f4fa2ce95b7d9ff276b6385833bca64a576c23257d2a841";
+//const char GENESIS_COINBASE_TX_HEX[] = "013c01ff00014c029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd088071210129b0cc6c5dc15e407f4fa2ce95b7d9ff276b6385833bca64a576c23257d2a841";
+//const char GENESIS_COINBASE_TX_HEX[] = "013c01ff00014c029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd0880712101e416082c4a6877e1282e90494b60b559d13e6be00dc0ecffe1027a011621ddf1";
+const char GENESIS_COINBASE_TX_HEX[] = "013c01ff00014c029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd0880712101e97097e53496d1db14c38bf4f0f0fe46faf3c8cd4237210fd62d34f5deb4bfd0";
+
 
 const uint8_t  CURRENT_TRANSACTION_VERSION                   =  1;
 const uint8_t  BLOCK_MAJOR_VERSION_1                         =  1;
@@ -86,9 +89,9 @@ const size_t   BLOCKS_SYNCHRONIZING_DEFAULT_COUNT            =  200;    //by def
 const size_t   COMMAND_RPC_GET_BLOCKS_FAST_MAX_COUNT         =  1000;
 
 //TODO This port will be used by the daemon to establish connections with p2p network
-const int      P2P_DEFAULT_PORT                              = 17236;
+const int      P2P_DEFAULT_PORT                              = 16236;
 //TODO This port will be used by the daemon to interact with simlewallet
-const int      RPC_DEFAULT_PORT                              = 18236;
+const int      RPC_DEFAULT_PORT                              = 17236;
 
 const size_t   P2P_LOCAL_WHITE_PEERLIST_LIMIT                =  1000;
 const size_t   P2P_LOCAL_GRAY_PEERLIST_LIMIT                 =  5000;
@@ -107,8 +110,8 @@ const char     P2P_STAT_TRUSTED_PUB_KEY[]                    = "8f80f9a5a434a9f1
 
 //TODO Add here your network seed nodes
 const std::initializer_list<const char*> SEED_NODES = {
-  //"seed1.cryptothecoin.com:8080",
-  //"seed2.cryptothecoin.com:8080",
+  "192.168.0.4:16236",
+  "192.168.0.4:16236",
 };
 
 struct CheckpointData {
